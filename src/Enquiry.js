@@ -22,7 +22,7 @@ export default function Enquiry()
 	
 	const onSubmit = (values, {resetForm}) => {
 		let data = {"name":values.name,"phone":values.phone,"query":values.query};
-		let urladd = "https://enquiryapp-lic8cmxrs-aaishu25.vercel.app/save";
+		let urladd = "https://eqa-eta.vercel.app/";
 		axios.post(urladd,data)
 		.then(res=>{
 			alert("We will get back to you");
